@@ -118,3 +118,7 @@ Open an issue or apply at [singlegrain.com/careers](https://www.singlegrain.com/
 ---
 
 *Inspired by [Anthropic's performance take-home](https://github.com/anthropics/original_performance_takehome)*
+
+## Development Status
+
+See [project_status.md](./project_status.md) for recent development activity and context.
