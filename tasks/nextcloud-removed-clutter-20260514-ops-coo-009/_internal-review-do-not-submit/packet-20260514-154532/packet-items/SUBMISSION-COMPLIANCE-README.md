@@ -1,0 +1,61 @@
+# Ops COO 009 - Submission Compliance README
+
+Status checked: 2026-05-14.
+
+## Sources Checked
+
+- Challenge brief: https://github.com/ericosiu/beat-claude/blob/main/challenges/ops-coo-009/brief.md.
+- Public scoring guide: https://github.com/ericosiu/beat-claude/blob/main/SCORING.md.
+- Challenge-specific rubric: https://github.com/ericosiu/beat-claude/blob/main/challenges/ops-coo-009/scoring_rubric.md.
+- Claude baseline: https://github.com/ericosiu/beat-claude/blob/main/challenges/ops-coo-009/claude_baseline.md.
+- Live job post: https://careers.singlegrain.com/jobs/567472-general-manager-agency.
+
+## Page-Limit Interpretation
+
+The job post says to submit a PDF or Markdown response, max 4 pages.
+
+The challenge brief itself is stricter: maximum 2 pages. It also says diagrams and decision trees do not count toward the limit.
+
+The public scoring guide says most challenges have a 4-page written-answer cap. It also says diagrams, artifact links, code, sheets, and short Loom demos do not count unless the brief says otherwise.
+
+Safe interpretation: treat `written-answer.pdf` as the official written answer and keep it to 2 pages.
+
+Treat operating artifacts, evidence logs, source labels, disclosures, proof files, screenshots/images, and appendices as supporting materials. Do not treat them as extra written-answer pages.
+
+## What To Submit
+
+Best upload path if the portal allows multiple files:
+
+1. `00_OFFICIAL_challenge_answer_2_pages.pdf`
+2. `operating-artifact.md`
+3. `evidence-log.md`
+4. `ai-usage-disclosure.md`
+5. `candidate-profile.md`
+6. Core proof summaries, if the portal accepts supporting files
+
+If the portal only accepts one challenge file, the safer file is still `00_OFFICIAL_challenge_answer_2_pages.pdf`. Use the cover letter, public page, or application fields to point reviewers to the supporting materials.
+
+`01_FULL_REVIEW_packet_with_image_appendix.pdf` is a review/backup packet. It contains the official 2-page written answer plus image-rendered supporting artifacts.
+
+Use it only if you are comfortable with the appendix risk. The risk: the portal or reviewer might count every PDF page. The brief and scoring guide allow supporting material outside the written limit, but the upload UI may not make that obvious.
+
+## Required Packet Coverage
+
+- Written answer: `00_OFFICIAL_challenge_answer_2_pages.pdf` and `written-answer.md`.
+- Operating artifact: `operating-artifact.md`.
+- Evidence log: `evidence-log.md`.
+- Number source labels: included in `written-answer.md`, `operating-artifact.md`, and `evidence-log.md`.
+- AI usage disclosure: `ai-usage-disclosure.md`.
+- What breaks it: included in `written-answer.md` and `operating-artifact.md`.
+- What stays human: included in `written-answer.md`, `operating-artifact.md`, and `ai-usage-disclosure.md`.
+- LinkedIn URL: `candidate-profile.md`.
+- MMPI-style self-assessment: `candidate-profile.md` and `written-answer.md`.
+
+## Do Not Upload By Default
+
+- Raw QuickBooks exports.
+- Raw client data.
+- Raw internal logs.
+- Internal-only score reviews unless asked.
+
+The included proof files are redacted summaries intended to support a live walkthrough without exposing unnecessary confidential detail.

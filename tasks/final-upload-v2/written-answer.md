@@ -1,0 +1,79 @@
+# Operational Takeover Plan
+
+LinkedIn: https://www.linkedin.com/in/christophersloane/
+
+AI output is cheap. The hard part is turning it into accepted work: action taken, owner assigned, rejected with a reason, or fed back into the system so the next pass is better.
+
+At Single Grain, the target is simple: move Eric from 60+ minutes a day of operational approvals to a 15-minute decision lane [1]. The work underneath him still has to move. I have built and run versions of this in my own companies. I started Heaviside in 2011 and still own it, including the vertical agency brands underneath it [2]. Those businesses now take less than five hours a week of direct founder management while I hold a full-time PASCO role [3].
+
+Internal P&L/FTE records show revenue per FTE moving from $55.6K in 2023 to $120.1K in 2026 Q1 [4]. Net margin moved from 2.6% to 17.1% in the same period [4]. The point was not artificial shrinkage. It was more useful work per person through clear ownership, queues, verified reporting, and exception handling.
+
+## First 48 Hours
+
+First goal: understand the technical system and authority map fast, protect the highest-value revenue, and start execution without pretending I know the system before I do [5]. Access is not context.
+
+- 0-2 hours: get with Shaun and map the system [6]. Is this OpenClaw or a similar agent layer? Where do the 48 crons live? Which repos, logs, deploy path, queues, data stores, and owners matter? What access do I have, and can I be a real co-developer submitting PRs to Shaun?
+
+- 2-4 hours: classify the three stale prospects before treating them as generic backlog [6]. Are they agency prospects or ClickFlow/TES prospects? If they are agency prospects, they are first. One $20K-$30K MRR agency deal can exceed current ClickFlow/Karrot MRR [5]. ClickFlow churn matters strategically, but it is not automatically more urgent than a recoverable agency deal.
+
+- 4-6 hours: build the triage view [6]. Pull the operating dashboard, CRM, ClickFlow usage, sales history, Slack/Gong context, GA4/GSC, Oracle output, and queue ownership. The 23 pending items, 2 lost ClickFlow customers, stale prospects, and 15 Oracle keywords become source-check, green, yellow, red, or dead [5].
+
+- 6-8 hours: prepare Eric's 30-minute boundary packet [6]. I need to know what he personally reviews and what should never reach him. I also need to know what I can decide, what needs Shaun, what authority I have with sales, and working-style issues that would slow integration.
+
+- Day two: execute. Sales works recoverable prospects. Shaun and I diagnose agent/data failures. Churn gets an owner and save path. Dead queue items close. Oracle gets source-checked. Green/yellow/red routing starts [5].
+
+By the end of day two, every known item has an owner, due time, rejection reason, or Eric decision slot. This is an ~$8M agency by the brief's headcount/RPE math, with a small but strategically important TES base [15]. These items matter, but false urgency would make the first two days worse. The first move is to understand quickly, then act.
+
+## Risk Gate
+
+Green auto-executes when the source is verified, the action is reversible, the pattern is known, and the owner/writeback path is clear. It still gets logged, sampled, and fed back into the rule set. Examples: Alfred briefings, approved-template Flash repurposing, and existing-page Oracle updates backed by GSC/GA4.
+
+Yellow goes to me or an accountable owner. This covers judgment that does not need Eric: churn investigation, new-page SEO recommendations, non-ICP prospects, creative refreshes, and channel pivots.
+
+Red goes to Eric. Pricing, refunds, contracts, strategic accounts, public claims, legal, privacy, security, senior people decisions, core cron changes, and CEO-level priority tradeoffs.
+
+The first question is which agents should ever surface red items. Oracle and Flash should usually not be CEO-level; SEO/content intelligence and content repurposing belong with the operator, SEO lead, content lead, or GM. Cyborg may reach Eric only for senior candidates or hires he personally wants to vet. The target is 3-5 true Eric items per day [7]. If green fails, reverse it if possible, tell the owner, move that item type to yellow, log the miss, and change the rule.
+
+## Cron Audit
+
+Day 30 is cron audit day. I would use the Elon Algorithm in order [8][9]. First question the requirement and owner. Then delete what should not exist, simplify what remains, accelerate the useful loop, and only then automate. The common AI-native mistake is automating bad process because output looks cheap.
+
+For each cron, I would apply the five steps to the actual recommendation: owner/requirement, delete, simplify, accelerate, automate last.
+
+- Competitor Pricing Monitor: the requirement fails if no one owns daily pricing decisions and the action rate is 3%. Delete the daily cron. Keep only monthly or exception review. Do not automate until a real pricing owner exists [11].
+
+- Candidate Outreach Follow-up: the requirement fails on brand risk and 5% response. Delete automated follow-up. Simplify to a weekly human list for high-fit candidates only. Do not automate judgment [11].
+
+- GSC Quick Win Scan: the requirement is real, but the scope is too loose. Delete low-confidence and new-page ideas. Keep existing-page, commercial-intent updates after GSC/GA4/URL/source checks. Auto-task only green edits after accepted-work feedback [11].
+
+- LinkedIn Prospect Sourcer: the requirement exists only if sales owns the ICP. Delete broad scraping. Simplify to ICP, trigger, relationship, and owner filters. Automate task creation, not prospect judgment [11].
+
+- Churn Signal Detector: keep the requirement, simplify the packet to account, usage delta, MRR, owner, and save path. Accelerate to same-day yellow escalation. Automate alerting and routing, not the relationship call [11].
+
+- Weekly Content Calendar: question the quantity requirement. Delete unused volume. Simplify to formats that actually publish. Automate drafts only after publish/reject feedback is in memory [11].
+
+- Deal Revival Scan: the requirement and owner are clear because 60% of items get follow-up. Keep it, accelerate with a protected sales block, and require CRM outcome logging [11].
+
+- Content Repurpose: keep only if the content lead uses the output. Delete unused formats, simplify to accepted formats, and automate drafts only with rejection memory [11].
+
+I run an internal scheduled-agent fleet with 80+ jobs across research, content, inbox, infrastructure, and cold email [12]. The lesson is that jobs need owners, pause states, error visibility, and accepted-work feedback.
+
+## Operating Edge
+
+The clearest example is Meta ads. With AI-assisted creative production and agent monitoring, I moved from testing one or two active winners at a time to a roughly 20-ad bench. That is about a 15x increase in live testing volume. Cost per booked call fell from about $770 in the old lead-form era to about $165 after the AI workflow was in place. Later new ad cohorts came in at $111-$142 [16].
+
+The lesson is simple: AI creates more shots on goal, agents watch the account, and humans decide what earns spend. The broader operating example is Heaviside itself: source data, queues, owners, review, send/publish decisions, and outcome logging. I made the right path easier than manual cleanup, then kept sales, SEO, paid media, software, and PASCO work moving through delegated ownership, exception review, and written memory [13].
+
+To review Oracle's 12 quick-win keywords as a non-SEO expert, I would source-check GSC/GA4, existing URL fit, intent, effort, owner, page sensitivity, and prior outcomes [5]. Then I would pull 5-6 credible SEO experts from X into a structured reference set. A Council of Experts workflow would make them argue the recommendations. I would decide from source data plus expert disagreement [17].
+
+In 2028, the COO/GM is the EOS-style integrator under the visionary CEO. Eric should create, sell, judge, set direction, and see around corners. The GM should sequence what the company can actually absorb. Often that means saying: these 5 matter now; the other 5 wait. The agency shift is from labor arbitrage to performance, output, and TES systems. Customers still need customers. What changes is how the agency helps them find them.
+
+AI usage disclosure: I used Claude Code and Codex CLI, plus skills I wrote for copywriting, decision councils, review, and scoring. AI helped compare the answer to the brief, find weak spots, and tighten the writing. I made the operating calls, checked the source documents, and removed generic AI language.
+
+Personality/working-style shorthand: INTP, likely 6w5 with a strong Type 1 overlay, Kolbe 9-4-3-2. Practical meaning: source-checking, preparation, standards, and error correction. It pairs well with an ENTJ/8w7, Quick Start 9, Follow Thru 2 CEO. I am not another idea generator. I am the person who turns 10 starts into owned outcomes [14].
+
+What breaks it: source data is wrong, yellow items have no owner, or Eric keeps reviewing non-red decisions. It also breaks if memory is not updated or agents are measured by output instead of accepted work. Backup artifact: https://csloane.com/single-grain.
+
+## Number Notes
+
+[1] Brief: Eric approval load and 10/3 starts/finishes. [2] Applicant history. [3] Estimated operating pattern. [4] Internal P&L plus estimated FTE model. [5] Brief: queue, churn, stale prospects, Oracle, $20K-$30K agency MRR, ClickFlow/Karrot MRR, 50% TES goal. [6] Proposed access blocks. [7] Brief: 3-5 Eric items/day. [8] Brief: day-30 audit. [9] Elon Algorithm reference. [10] Proposed keep/kill/improve counts. [11] Brief sample cron rates. [12] Internal scheduler manifests/logs. [13] Applicant operating examples and internal workflow records. [14] Applicant self-assessment and brief. [15] Estimated: 45 people x $180K RPE = about $8.1M. [16] Internal Meta/CRM reports, creative launch logs, and change logs. [17] Applicant XAPI/Obsidian/council workflow.

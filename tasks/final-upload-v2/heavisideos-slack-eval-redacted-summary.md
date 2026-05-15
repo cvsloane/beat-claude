@@ -1,0 +1,73 @@
+# HeavisideOS Slack Assistant Eval - Redacted Summary
+
+This is a redacted evidence summary for `ops-coo-009`. It is designed to be shareable without raw customer names or raw report tables.
+
+## Why This Is The Primary Part 4 Proof
+
+This is the cleanest operating-edge proof because it shows a real AI workflow with:
+
+- a repeatable eval runner,
+- production API benchmark reports,
+- explicit scoring dimensions,
+- gate status,
+- before/after results,
+- code changes tied to the improvement,
+- and a documented learning loop.
+
+It should be used as proof of measured AI assistant improvement, retrieval discipline, and operating-loop behavior. It should not be used to claim HeavisideOS is a fully mature company operating system.
+
+## Source Records
+
+| Evidence | Source reference | Shareability |
+|---|---|---|
+| Eval runbook | HeavisideOS Slack Assistant Usefulness Eval Program | Available as summarized/redacted source record. |
+| Baseline report | `slack-usefulness/20260226-225557/report.md` | Raw report contains customer names; not attached. |
+| Final pass report | `slack-usefulness/20260227-015739/report.md` | Raw report contains customer names; not attached. |
+| Later structured-analysis pass | `slack-usefulness/20260227-025448/report.md` | Raw report contains customer names; not attached. |
+| Source commit | HeavisideOS commit `1dd49b8` | Shareable if repo/source access is appropriate. |
+| Eval runner | `scripts/assistant-evals/run-slack-assistant-eval.ts` | Shareable if repo/source access is appropriate. |
+| Eval config | `config/evals/slack-assistant/usefulness-suite.json` | Shareable if tenant data is not embedded. |
+
+## Redacted Metrics Table
+
+| Metric | Baseline | Final pass | Delta |
+|---|---:|---:|---:|
+| Active mapped customers | 39 `[Observed internal eval]` | 39 `[Observed internal eval]` | no change |
+| Questions per tenant | 3 `[Observed internal eval]` | 3 `[Observed internal eval]` | no change |
+| Total eval cases | 117 `[Observed internal eval]` | 117 `[Observed internal eval]` | no change |
+| Overall score | 4.055 / 5.000 `[Observed internal eval]` | 4.467 / 5.000 `[Observed internal eval]` | +0.412 `[Observed internal eval]` |
+| Root-cause score | 5.000 / 5.000 `[Observed internal eval]` | 5.000 / 5.000 `[Observed internal eval]` | 0.000 `[Observed internal eval]` |
+| Evidence score | 4.872 `[Observed internal eval]` | 4.859 `[Observed internal eval]` | -0.013 `[Observed internal eval]` |
+| Actionability score | 3.705 `[Observed internal eval]` | 3.991 `[Observed internal eval]` | +0.286 `[Observed internal eval]` |
+| Retrieval score | 3.255 `[Observed internal eval]` | 4.964 `[Observed internal eval]` | +1.709 `[Observed internal eval]` |
+| Formatting score | 2.987 `[Observed internal eval]` | 3.000 `[Observed internal eval]` | +0.013 `[Observed internal eval]` |
+| Gate status | `review_required` `[Observed internal eval]` | `pass` `[Observed internal eval]` | gate cleared |
+| API responses passing | not recorded in baseline table | 117 `[Observed internal eval]` | final pass complete |
+| Retrieval non-empty pass | baseline had 3 failures `[Observed internal eval]` | 117 pass / 0 fail `[Observed internal eval]` | tenant retrieval gap cleared |
+| Citation presence pass | baseline had 3 warnings `[Observed internal eval]` | 117 pass `[Observed internal eval]` | citation warnings cleared |
+
+Later structured-analysis pass (`20260227-025448`): overall score reached 4.801 / 5.000 `[Observed internal eval]`, actionability reached 5.000 / 5.000 `[Observed internal eval]`, retrieval remained 4.964 / 5.000 `[Observed internal eval]`, and the gate remained `pass` `[Observed internal eval]`.
+
+## What Changed
+
+- Implemented a Slack assistant usefulness eval runner and config.
+- Added service-focused golden cases across active PVM/GDM customers.
+- Implemented baseline service architecture: catalog defaults, tenant overrides, and service fact overrides.
+- Added Slack `SERVICE` fact-update path with tenant service sync on approval.
+- Remediated tenant-specific communications retrieval gaps with targeted ClickUp/Missive sync.
+- Added a safe Slack test lane so live Slack-path validation can run without posting into customer channels by default.
+
+## Submission Use
+
+Use this as the primary answer to: "What's one operational workflow you've personally automated or augmented with AI? Give us the before/after with real metrics."
+
+Recommended phrasing:
+
+> I built an eval loop for a Slack assistant that answers client-status, service, and root-cause questions from customer context. The first production benchmark across 39 active mapped customers `[Observed internal eval]` and 117 cases `[Observed internal eval]` showed an overall score of 4.055/5.000 `[Observed internal eval]` and retrieval of 3.255/5.000 `[Observed internal eval]`, with the gate requiring review. After targeted retrieval/service-state fixes and tenant sync remediation, the full pass reached 4.467/5.000 overall `[Observed internal eval]`, 4.964/5.000 retrieval `[Observed internal eval]`, and a passing gate `[Observed internal eval]`. The lesson was that aggregate quality can hide a binding category failure, so I added category gates, source checks, and repeatable regression reports.
+
+## Caveats
+
+- Raw reports include customer names; external packet should use this redacted metrics table.
+- The workflow proves measured assistant improvement and retrieval/action-loop discipline.
+- It does not prove HeavisideOS is fully mature as a company-wide operating system.
+- It maps to Single Grain because the problem is structurally similar: Slack/data-connected AI outputs must be measured by usefulness, retrieval, accepted work, and closed-loop improvement.
