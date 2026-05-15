@@ -10,13 +10,15 @@ The agency later expanded into cold email, direct mail, social media, verticaliz
 
 ## 2. Can you walk me through how you currently use AI in your day-to-day work?
 
-I use AI as an operating layer, not just a writing assistant.
+I use AI as an operating layer, not just a writing assistant. Day to day, the tools I rely on most are Codex CLI, Claude Code, ChatGPT and Claude for analysis, and an Obsidian vault. The vault is the memory layer. It keeps decisions, sources, lessons, project state, and operating rules from disappearing between sessions.
 
-Day to day, that means development work with Codex and Claude Code-style tools, source gathering, analysis, workflow automation, research, content drafting, and scoring gates. My Obsidian vault is the memory layer, so decisions, sources, lessons, and project state do not disappear between sessions.
+I use AI for development, source gathering, research, content drafts, QA, scoring, decision councils, and workflow automation. I have also built custom skills around copy review, decision councils, Meta ads review, inbox processing, SEO review, and application scoring. Those skills make the assistants behave more like repeatable operating tools and less like one-off chat sessions.
 
-In Heaviside, the current practical version of HeavisideOS handles SlackBot summaries and query flows around client communication, paid ads, SEO, and business-performance context. I also run an internal scheduled-agent fleet for research, content drafts, inbox briefs, infrastructure checks, fleet monitoring, and cold-email workflows.
+On the automation side, I run an internal scheduled-agent fleet with 80+ jobs across research, content drafts, inbox briefs, infrastructure checks, fleet monitoring, and cold-email workflows. In Heaviside, the practical version of HeavisideOS handles SlackBot summaries and query flows around client communication, paid ads, SEO, and business-performance context. I have also built workflows like HG Market Report for sales audits, HG SEO Commander for delivery visibility, and AI-assisted Meta ads monitoring.
 
-The rule is simple: AI output does not count until it becomes accepted work, a clear rejection, owner action, a system update, or a rule/memory update.
+The measured improvements are real. With Meta ads, AI-assisted creative production and agent monitoring moved us from testing one or two active winners at a time to a roughly 20-ad bench. That is about a 15x increase in live testing volume. Booked-call cost fell from about $770 in the old lead-form era to about $165 after the AI workflow was in place. At the company level, Heaviside revenue per FTE has nearly doubled since 2023 while margin improved. The businesses now take less than five hours a week of my time to manage.
+
+The rule is simple: AI output does not count until it becomes accepted work, a clear rejection, owner action, a system update, or a rule and memory update.
 
 ## 3. Can you give an example of a process or system you built that permanently improved execution?
 
