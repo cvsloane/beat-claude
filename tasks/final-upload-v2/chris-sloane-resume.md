@@ -20,13 +20,15 @@ Founder-operator with 10+ years building and running agency businesses. Started 
 - Reduced day-to-day founder management load to less than `5` hours a week through competent operators, ownership, queues, and exception handling.
 - Expanded paid-media testing from a concentrated single-winner pattern into a larger AI-assisted creative testing loop with agent monitoring and human keep-or-kill review.
 
-### PASCO Scientific - Head of Digital, Digital Marketing, SEO, ML-AI
+### PASCO Scientific - Sales, SEO, Digital Marketing, and Machine Learning
 
 2015-present
 
-- Lead digital marketing, SEO, analytics, and AI and ML-related work for a science education company.
-- Built and supported data workflows for forecasting, customer and prospect intelligence, and internal decision support.
-- Public references to PASCO work are kept anonymized or high-level unless explicitly approved.
+- Hired as Outside Sales Representative and Business Development Manager for a five-state territory.
+- In 2020/2021, proposed a Head of SEO and Digital Marketing role to the board and leadership team. The role was created, and I was promoted into it.
+- Led SEO, digital marketing, analytics, and search-driven demand work for a science education company.
+- In 2025, added AI and Machine Learning Engineer responsibilities.
+- Built an internal sales forecasting and sales-management ML model and application.
 
 ### B2B Sales and Enterprise Accounts - Sales and Account Management
 
@@ -49,7 +51,7 @@ Founder-operator with 10+ years building and running agency businesses. Started 
 
 - **HG Market Report:** sales-audit workflow that captures prospect context, runs local SEO checks, builds the analysis, publishes the report URL, and sends the report-ready email.
 - **HG SEO Commander:** one delivery surface for GA4, Search Console, GBP, rankings, geogrids, citations, articles, approvals, queues, syncs, and admin tools.
-- **Meta ads operating loop:** AI-generated creative variants, agent monitoring, human keep-or-kill review, and booked-call gates.
+- **Meta ads operating loop:** AI-generated creative variants, agent monitoring, human keep-or-kill review, and booked call gates.
 - **Scheduled-agent fleet:** internal automation layer with 80+ jobs across research, content, inbox, infrastructure, and cold email.
 - **Obsidian operating vault:** source capture, decisions, lessons, project state, and reusable expertise.
 
